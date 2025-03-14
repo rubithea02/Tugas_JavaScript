@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menghitung Luas Bangun Datar</title>
     <script>
+        // Deklarasi variabel panjang, lebar, sisi, alas, dan tinggi
+        let panjang = 10;
+        let lebar = 5;
+        let sisi = 6;
+        let alas = 8;
+        let tinggi = 4;
+
         // Fungsi untuk menghitung luas persegi panjang
         function luasPersegiPanjang(panjang, lebar) {
             return panjang * lebar;
@@ -21,13 +28,30 @@
         }
 
         // Menampilkan hasil perhitungan di console
-        console.log("Luas Persegi Panjang: " + luasPersegiPanjang(10, 5));
-        console.log("Luas Bujur Sangkar: " + luasBujurSangkar(6));
-        console.log("Luas Segitiga: " + luasSegitiga(8, 4));
+        let luasPP = luasPersegiPanjang(panjang, lebar);
+        let luasBS = luasBujurSangkar(sisi);
+        let luasS = luasSegitiga(alas, tinggi);
+        
+        console.log("Luas Persegi Panjang: " + luasPP + " cm\u00B2");
+        console.log("Luas Bujur Sangkar: " + luasBS + " cm\u00B2");
+        console.log("Luas Segitiga: " + luasS + " cm\u00B2");
+        
+        // Menampilkan hasil di halaman HTML
+        document.write("<h3>Persegi Panjang</h3>");
+        document.write("<p>Jika panjang: " + panjang + " cm dan lebar: " + lebar + " cm</p>");
+        document.write("<p>Maka Luas Persegi Panjang: " + luasPP + " cm\u00B2</p>");
+
+        document.write("<h3>Bujur Sangkar</h3>");
+        document.write("<p>Jika panjang sisi: " + sisi + " cm</p>");
+        document.write("<p>Maka Luas Bujur Sangkar: " + luasBS + " cm\u00B2</p>");
+
+        document.write("<h3>Segitiga</h3>");
+        document.write("<p>Jika panjang alas: " + alas + " cm dan tinggi: " + tinggi + " cm</p>");
+        document.write("<p>Maka Luas Segitiga: " + luasS + " cm\u00B2</p>");
     </script>
 </head>
 <body>
-    <h2>Menghitung Luas Bangun Datar</h2>
+    <h2>Menghitung Luas Bangun Datar Bisa Di Lihat Juga Di Console</h2>
     <p>Silakan buka console (F12 > Console) untuk melihat hasil perhitungan.</p>
 </body>
 </html>
